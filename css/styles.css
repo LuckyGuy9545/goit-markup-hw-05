@@ -31,7 +31,7 @@ body {
   color: var(--color_grey);
   background-color: var(--color_white);
   letter-spacing: 0.03em;
-  width: 1600px;
+  
 }
 
 a {
@@ -201,7 +201,7 @@ ul {
 /* Section #1*/
 
 .section_headline {
-  background: var(--background_grey);
+  background-color: var(--background_grey);
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
@@ -212,6 +212,9 @@ ul {
     url("../image/Hero_img.jpg");
 
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main_headline {
@@ -316,9 +319,8 @@ ul {
 
 .close_btn:hover,
 .close_btn:focus {
-  background-color: var(--brand_style);
-  color: var(--color_white);
-
+  color: var(--brand_style);
+  
   transition: background-color 250ms var(--cubic_bezier),
     color 250ms var(--cubic_bezier);
 }
@@ -566,7 +568,7 @@ ul h3 {
   display: flex;
 }
 
-.s5_partners a {
+.s5_partners_link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -594,8 +596,8 @@ ul h3 {
   fill: currentColor;
 }
 
-.s5_partners a:hover,
-.s5_partners a:focus {
+.s5_partners_link:hover,
+.s5_partners_link:focus {
   border-color: var(--brand_style);
   color: var(--brand_style);
 
@@ -613,10 +615,10 @@ ul h3 {
   justify-content: center;
 }
 
-.pf_btn li {
+.pf_btn_li {
   margin-right: 8px;
 }
-.pf_btn li:last-child {
+.pf_btn_li:last-child {
   margin-right: 0;
 }
 
@@ -697,7 +699,8 @@ ul h3 {
 }
 
 /* ---- Text on img + hover ----*/
-.our_jobs_li:hover .our_jobs_overlay {
+.our_jobs_link:hover .our_jobs_overlay,
+.our_jobs_link:focus .our_jobs_overlay{
   transform: translateY(0);
 }
 
@@ -724,7 +727,7 @@ ul h3 {
   transform: translate(-50%, -50%);
 
   overflow: hidden;
-  overflow: auto;
+  
   width: 322px;
   height: 168px;
   text-decoration: none;
